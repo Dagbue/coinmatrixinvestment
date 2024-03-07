@@ -28,9 +28,9 @@
           <div class="content-1">
             <p class="content-1-text-1">Deposited</p>
             <div>
-              <p class="content-1-text-2" v-if="approved === 'approved'">£ {{this.contacts.deposit}}</p>
-              <p class="content-1-text-2" v-else-if="approved === 'Pending'">£ ...</p>
-              <p class="content-1-text-2" v-else>£ ...</p>
+              <p class="content-1-text-2" v-if="approved === 'approved'">$ {{this.contacts.deposit}}</p>
+              <p class="content-1-text-2" v-else-if="approved === 'Pending'">...</p>
+              <p class="content-1-text-2" v-else>...</p>
             </div>
           </div>
           <div class="content-2">
@@ -44,9 +44,9 @@
           <div class="content-1">
             <p class="content-1-text-1">Withdrawn</p>
             <div>
-              <p class="content-1-text-2" v-if="approved2 === 'approved'">£ {{this.contacts.withdrawal}}</p>
-              <p class="content-1-text-2" v-else-if="approved2 === 'Pending'">£ ...</p>
-              <p class="content-1-text-2" v-else>£ ...</p>
+              <p class="content-1-text-2" v-if="approved2 === 'approved'">$ {{this.contacts.withdrawal}}</p>
+              <p class="content-1-text-2" v-else-if="approved2 === 'Pending'">...</p>
+              <p class="content-1-text-2" v-else>...</p>
             </div>
           </div>
           <div class="content-2">
@@ -60,9 +60,9 @@
           <div class="content-1">
             <p class="content-1-text-1">Profits</p>
             <div>
-              <p class="content-1-text-2" v-if="approved === 'approved'">£ {{this.contacts.profits}}</p>
-              <p class="content-1-text-2" v-else-if="approved === 'Pending'">£ ...</p>
-              <p class="content-1-text-2" v-else>£ ...</p>
+              <p class="content-1-text-2" v-if="approved === 'approved'">$ {{this.contacts.profits}}</p>
+              <p class="content-1-text-2" v-else-if="approved === 'Pending'">...</p>
+              <p class="content-1-text-2" v-else>...</p>
             </div>
           </div>
           <div class="content-2">
@@ -76,9 +76,9 @@
           <div class="content-1">
             <p class="content-1-text-1">Bonus</p>
             <div>
-              <p class="content-1-text-2" v-if="approved === 'approved'">£ {{this.contacts.bonusMain}}</p>
-              <p class="content-1-text-2" v-else-if="approved === 'Pending'">£ ...</p>
-              <p class="content-1-text-2" v-else>£ ...</p>
+              <p class="content-1-text-2" v-if="approved === 'approved'">$ {{this.contacts.bonusMain}}</p>
+              <p class="content-1-text-2" v-else-if="approved === 'Pending'">...</p>
+              <p class="content-1-text-2" v-else>...</p>
             </div>
           </div>
           <div class="content-2">
@@ -94,9 +94,9 @@
           <div class="content-1">
             <p class="content-1-text-1">Ref Bonus</p>
             <div>
-              <p class="content-1-text-2" v-if="approved === 'approved'">£ {{this.contacts.bonus}}</p>
-              <p class="content-1-text-2" v-else-if="approved === 'Pending'">£ ...</p>
-              <p class="content-1-text-2" v-else>£ ...</p>
+              <p class="content-1-text-2" v-if="approved === 'approved'">$ {{this.contacts.bonus}}</p>
+              <p class="content-1-text-2" v-else-if="approved === 'Pending'">...</p>
+              <p class="content-1-text-2" v-else>...</p>
             </div>
           </div>
           <div class="content-2">
@@ -110,9 +110,9 @@
           <div class="content-1">
             <p class="content-1-text-1">Balance</p>
             <div>
-              <p class="content-1-text-2" v-if="approved === 'approved'">£ {{ this.contacts.deposit + this.contacts.profits + this.contacts.bonusMain + this.contacts.bonus - this.contacts.withdrawal  }} </p>
-              <p class="content-1-text-2" v-else-if="approved === 'Pending'">£ ...</p>
-              <p class="content-1-text-2" v-else>£ ...</p>
+              <p class="content-1-text-2" v-if="approved === 'approved'">$ {{ this.contacts.deposit + this.contacts.profits + this.contacts.bonusMain + this.contacts.bonus - this.contacts.withdrawal  }} </p>
+              <p class="content-1-text-2" v-else-if="approved === 'Pending'">...</p>
+              <p class="content-1-text-2" v-else>...</p>
             </div>
           </div>
           <div class="content-2">
