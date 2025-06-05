@@ -87,25 +87,10 @@
       </div>
       <div class="section-part">
 
-        <a href="https://coinmarketcap.com/">
-          <img src="https://infiniteprotrades.com/assets/home/wp-content/uploads/2020/03/bitcoin-1.svg" />
-        </a>
-
-        <a href="">
-          <img src="https://infiniteprotrades.com/assets/home/wp-content/uploads/2020/03/mastercard-1.svg" />
-        </a>
-
         <a href="">
           <img src="@/assets/bankwire.svg" />
         </a>
 
-<!--        <a href="">-->
-<!--          <img src="@/assets/usdt.png" style="width: 23%;" />-->
-<!--        </a>-->
-
-        <a href="https://crypto.com/">
-          <img src="https://infiniteprotrades.com/assets/home/wp-content/uploads/2020/03/america-express.svg" />
-        </a>
 
       </div>
       <div class="copyright">
