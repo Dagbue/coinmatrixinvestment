@@ -91,6 +91,22 @@
           <img src="@/assets/bankwire.svg" />
         </a>
 
+        <a href="">
+          <img src="https://primexbt.com/_next/static/media/crystal.ce2c822d.svg" class="footer-partner" />
+        </a>
+
+        <a href="">
+          <img src="https://primexbt.com/_next/static/media/devexperts.d29d2c72.svg" class="footer-partner"  />
+        </a>
+
+        <a href="">
+          <img src="https://primexbt.com/_next/static/media/baksta.ccf05afe.svg" class="footer-partner"  />
+        </a>
+
+        <a href="">
+          <img src="https://primexbt.com/_next/static/media/fireblocks.64d070a3.svg" class="footer-partner" />
+        </a>
+
 
       </div>
       <div class="copyright">
@@ -296,6 +312,10 @@ a{
   margin-bottom: 1.5%;
 }
 
+.footer-partner{
+  width: 55%;
+}
+
 
 @media (max-width: 990px) {
   .footer-link-container {
@@ -341,6 +361,10 @@ a{
   }
   .copyright{
     font-size: 17px;
+  }
+
+  .footer-partner{
+    width: 35%;
   }
 }
 @media (max-width: 700px) {
