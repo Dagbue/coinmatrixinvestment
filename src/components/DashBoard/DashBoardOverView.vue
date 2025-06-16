@@ -41,7 +41,10 @@
             <div>
 <!--              <p class="content-1-text-2" v-if="approved2 === 'approved'">£ {{this.contacts.withdrawal}}</p>-->
 <!--              <p class="content-1-text-2" v-else-if="approved2 === 'Pending'">£ ...</p>-->
-              <p class="content-1-text-2" >$ {{UserDetails.user.totalDepositedAmount + UserDetails.user.profit + UserDetails.user.bonus - UserDetails.user.totalWithdrawals | formatAmount2}}</p>
+<!--              <p class="content-1-text-2" >$ {{UserDetails.user.totalDepositedAmount + UserDetails.user.profit + UserDetails.user.bonus - UserDetails.user.totalWithdrawals | formatAmount2}}</p>      -->
+              <p class="content-1-text-2" >$ {{UserDetails.user.totalDepositedAmount - UserDetails.user.totalWithdrawals | formatAmount2}}</p>
+
+
             </div>
           </div>
           <div class="content-2">
@@ -81,21 +84,21 @@
           </div>
         </div>
 
-        <div class="vl-2"></div>
+<!--        <div class="vl-2"></div>-->
 
-        <div class="section-3-content">
-          <div class="content-1">
-            <p class="content-1-text-1">Current Plan</p>
-            <div>
-              <!--              <p class="content-1-text-2" v-if="approved === 'approved'">£ {{this.contacts.bonusMain}}</p>-->
-              <!--              <p class="content-1-text-2" v-else-if="approved === 'Pending'">£ ...</p>-->
-              <p class="content-1-text-2" >{{UserDetails.user.currentPlan}}</p>
-            </div>
-          </div>
-          <div class="content-2">
-            <img src="@/assets/wallet-number-icon.svg" alt="wallet-balance-icon"/>
-          </div>
-        </div>
+<!--        <div class="section-3-content">-->
+<!--          <div class="content-1">-->
+<!--            <p class="content-1-text-1">Current Plan</p>-->
+<!--            <div>-->
+<!--              &lt;!&ndash;              <p class="content-1-text-2" v-if="approved === 'approved'">£ {{this.contacts.bonusMain}}</p>&ndash;&gt;-->
+<!--              &lt;!&ndash;              <p class="content-1-text-2" v-else-if="approved === 'Pending'">£ ...</p>&ndash;&gt;-->
+<!--              <p class="content-1-text-2" >{{UserDetails.user.currentPlan}}</p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="content-2">-->
+<!--            <img src="@/assets/wallet-number-icon.svg" alt="wallet-balance-icon"/>-->
+<!--          </div>-->
+<!--        </div>-->
 
       </div>
     </div>
@@ -149,21 +152,21 @@
           </div>
         </div>
 
-        <div class="vl-2"></div>
+<!--        <div class="vl-2"></div>-->
 
-        <div class="section-3-content">
-          <div class="content-1">
-            <p class="content-1-text-1">Currency</p>
-            <div>
-              <!--              <p class="content-1-text-2" v-if="approved === 'approved'">£ {{this.contacts.bonusMain}}</p>-->
-              <!--              <p class="content-1-text-2" v-else-if="approved === 'Pending'">£ ...</p>-->
-              <p class="content-1-text-2" >{{UserDetails.user.currency}}</p>
-            </div>
-          </div>
-          <div class="content-2">
-            <img src="@/assets/wallet-number-icon.svg" alt="wallet-balance-icon"/>
-          </div>
-        </div>
+<!--        <div class="section-3-content">-->
+<!--          <div class="content-1">-->
+<!--            <p class="content-1-text-1">Currency</p>-->
+<!--            <div>-->
+<!--              &lt;!&ndash;              <p class="content-1-text-2" v-if="approved === 'approved'">£ {{this.contacts.bonusMain}}</p>&ndash;&gt;-->
+<!--              &lt;!&ndash;              <p class="content-1-text-2" v-else-if="approved === 'Pending'">£ ...</p>&ndash;&gt;-->
+<!--              <p class="content-1-text-2" >{{UserDetails.user.currency}}</p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="content-2">-->
+<!--            <img src="@/assets/wallet-number-icon.svg" alt="wallet-balance-icon"/>-->
+<!--          </div>-->
+<!--        </div>-->
 
       </div>
     </div>
@@ -1720,10 +1723,11 @@ i{
 
 .section-3{
   display: flex;
+  justify-content: space-between;
   align-content: center;
   align-items: center;
   padding: 15px 25px;
-  gap: 24px;
+
   width: 1183px;
   height: 110px;
   background: #0f171c;

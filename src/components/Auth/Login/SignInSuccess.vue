@@ -84,29 +84,18 @@ export default {
     },
 
     fetchBitcoinRate() {
-      // Set loading to true when the request starts
       this.loading = true;
-
-      axios.get('https://api.coindesk.com/v1/bpi/currentprice/BTC.json')
+      axios.get('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd')
           .then(response => {
-            this.bitcoinRate = response.data.bpi.USD.rate_float;
-            // Set loading to false when the data is successfully fetched
+            this.bitcoinRate = response.data.bitcoin.usd;
             this.loading = false;
           })
           .catch(error => {
             console.error(error);
-            // Set loading to false also if there is an error
             this.loading = false;
           });
     }
 
-    // fetchBitcoinRate() {
-    //   axios.get('https://api.coindesk.com/v1/bpi/currentprice/BTC.json')
-    //       .then(response => {
-    //         this.bitcoinRate = response.data.bpi.USD.rate_float;
-    //       })
-    //       .catch(error => console.error(error));
-    // },
   },
   created() {
     this.fetchBitcoinRate()
