@@ -2,6 +2,7 @@
   <div class="alpha">
     <div class="body">
       <h2>List of Users</h2>
+<!--      {{allUsers[0]}}-->
       <div class="row trans-mgt">
 
         <div class="form-group fg--search">

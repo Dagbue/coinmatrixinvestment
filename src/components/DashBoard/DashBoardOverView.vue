@@ -1,7 +1,7 @@
 <template>
   <div class="alpha">
 
-      <intro-message-modal  @close="hideDialog" v-if="isModalOpened === false && dialogIsVisible === true" />
+<!--      <intro-message-modal  @close="hideDialog" v-if="isModalOpened === false && dialogIsVisible === true" />-->
 
     <div class="section-2">
 
@@ -1126,13 +1126,16 @@ import BaseButton from "@/components/BaseComponents/buttons/BaseButton.vue";
 import StoreUtils from "@/utility/StoreUtils";
 import TradeRequest from "@/model/request/TradeRequest";
 import {mapState} from "vuex";
-import IntroMessageModal from "@/components/BaseComponents/modal/IntroMessageModal.vue";
+// import IntroMessageModal from "@/components/BaseComponents/modal/IntroMessageModal.vue";
 import BaseLoader from "@/components/BaseComponents/BaseLoader.vue";
 // import axios from "axios";
 
 export default {
   name: "DashBoardOverView",
-  components: {BaseLoader, IntroMessageModal, BaseButton},
+  components: {
+    BaseLoader,
+    // IntroMessageModal,
+    BaseButton},
   data () {
     return {
       model: new TradeRequest().createTrade,
